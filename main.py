@@ -48,12 +48,12 @@ max_flux_drop = (planet_radius_solar / star_radius) ** 2 * 100  # 퍼센트 단�
 
 # 그래프 생성
 fig, ax = plt.subplots()
+plt.rcParams["font.family"] = "Malgun Gothic"
 ax.plot(time, flux, color='blue', label='상대 광도')
 ax.set_xlabel('정규화된 시간')
 ax.set_ylabel('상대 광도 (F/F₀)')
 ax.set_title('행성 통과에 따른 항성 광도 변화')
 ax.grid(True)
-ax.rcParams["font.family"] = "Malgun Gothic"
 ax.legend()
 
 # 그래프 표시
