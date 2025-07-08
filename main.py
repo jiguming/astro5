@@ -53,6 +53,7 @@ ax.set_xlabel('정규화된 시간')
 ax.set_ylabel('상대 광도 (F/F₀)')
 ax.set_title('행성 통과에 따른 항성 광도 변화')
 ax.grid(True)
+ax.rcParams["font.family"] = "Malgun Gothic"
 ax.legend()
 
 # 그래프 표시
